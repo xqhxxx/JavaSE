@@ -1,4 +1,4 @@
-package com.xxx.se;
+package com.xxx.se.d01;
 
 import java.util.HashMap;
 import java.util.Hashtable;
