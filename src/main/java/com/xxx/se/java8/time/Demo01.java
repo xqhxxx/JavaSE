@@ -29,7 +29,11 @@ public class Demo01 {
 
             System.out.println("执行当前时间区间：" + start_dt + " " + next_dt.minusSeconds(1));
             //东八区 时间戳
-            System.out.println(start_dt.toInstant(ZoneOffset.of("+8")).toEpochMilli());
+            //0ms  ->北京时间：1970-01-01 08:00:00 转换为时间再+8h
+            long ltm = start_dt.toInstant(ZoneOffset.of("+8")).toEpochMilli();
+            System.out.println(ltm);
+
+            System.out.println(new Date(ltm));//时间戳转date 默认当前时区
 
             start_dt = next_dt;
         }
