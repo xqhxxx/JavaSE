@@ -21,6 +21,11 @@ public class StreamDemo {
 
         System.out.println(maxLengthStartWithZ);
 
+//        names.stream().skip(2).forEach(System.out::println);
+        System.out.println(names.stream().reduce((s, s2) -> s + "-" + s2).get());
+
+
+
 
     }
 }
