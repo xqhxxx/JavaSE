@@ -17,6 +17,11 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>com.magus.jdbc</groupId>
+      <artifactId>openplant</artifactId>
+      <version>20210723</version>
+    </dependency>
   </dependencies>
 
 </project>
