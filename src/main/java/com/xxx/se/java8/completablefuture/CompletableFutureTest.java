@@ -5,7 +5,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 
-import static com.sun.corba.se.impl.orbutil.ORBUtility.getThreadName;
 
 /**
  * @author xqh
