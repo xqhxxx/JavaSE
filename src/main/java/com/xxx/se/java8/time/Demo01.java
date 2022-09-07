@@ -1,6 +1,7 @@
 package com.xxx.se.java8.time;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -26,6 +27,7 @@ public class Demo01 {
             //东八区 时间戳
             //0ms  ->北京时间：1970-01-01 08:00:00 转换为时间再+8h
             long ltm = start_dt.toInstant(ZoneOffset.of("+8")).toEpochMilli();
+//            long ltm = start_dt.atZone(ZoneId.systemDefault()).toInstant();
             System.out.println(new Date(ltm));//时间戳转date 默认当前时区
 
             start_dt = next_dt;
