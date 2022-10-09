@@ -8,8 +8,6 @@ import org.apache.commons.codec.binary.Base64;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
-import java.io.IOException;
-import java.net.Socket;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
@@ -35,7 +33,7 @@ class RealWarns {
     public static void sendDingDing(StringBuffer stringBuffer) {
 
         try {
-            //钉钉机器人地址（配置机器人的webhook）
+            //钉钉机器人地址（配置机器人的webhook）  点击机器人头像查看
             String baseUrl = "https://oapi.dingtalk.com/robot/send?access_token=";
             String token = "1c89276b6228fd2fdf9e3af896bd355aeb429e03faf65f906c9b50e4b932d34f";
             String secret = "SECae67eb3f667373ddc19e1453d5dbdbbec116cbb5c515add1e3db693e65a189d7";

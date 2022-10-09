@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
-import java.util.Vector;
 
 /**
  * @author xqh
@@ -49,7 +48,7 @@ public class DataFromMagus {
      */
     private static void getDataFromMagus(LocalDateTime _s, LocalDateTime _e) throws Exception {
 
-        OPConnect conn = new OPConnect("10.191.177.6", 8200, 6000, "cypc_ds", "Jxkj@123");
+        OPConnect conn = new OPConnect("10.191.177.6", 8200, 6000, "cypc_ds", "Jxkj@123Jxkj@123");
 
 //        Date from = Date.from(_s.toInstant(ZoneOffset.of("+8")));
         Date from = Date.from(_s.atZone(ZoneId.systemDefault()).toInstant());
