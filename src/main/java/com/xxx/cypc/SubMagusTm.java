@@ -3,11 +3,6 @@ package com.xxx.cypc;
 import com.magus.net.OPConnect;
 import com.magus.net.OPDynamicData;
 import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvValidationException;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -19,7 +14,8 @@ import java.util.HashMap;
 /**
  * @author xqh
  * @date 2022/9/15  13:47:09
- * @apiNote 度麦杰实时数据
+ * @apiNote 取 magus 链路测点的实时数据
+ *
  * java -cp .\JavaSE-1.0-SNAPSHOT-jar-with-dependencies.jar com.xxx.cypc.SubMagusTm
  */
 public class SubMagusTm {
